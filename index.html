@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c83f347ff1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Techswimmer</title>
+  </head>
+  <body class="text-themeTextColor">
+    <!-- Nav bar -->
+    <div>
+      <div class="lg:shadow-lg p-2 bg-white px-5">
+        <div
+          class="container w-full xl:w-[1150px] flex justify-between items-center mx-auto"
+        >
+          <div class="w-fit">
+            <a href="/">
+              <p class="text-3xl font-bold">
+                Tech<span class="text-themeColor">swimmer</span>
+              </p>
+            </a>
+          </div>
+          <div>
+            <ul class="hidden lg:flex gap-10 items-center font-medium menu">
+              <li
+                class="border-b-2 border-transparent hover:border-themeColor"
+                id="serviceBtn"
+              >
+                <a href="#"
+                  >Services<i class="fa-solid fa-chevron-down ml-3"></i
+                ></a>
+              </li>
+              <li class="border-b-2 border-transparent hover:border-themeColor">
+                <a href="#">Case Studies</a>
+              </li>
+              <li class="border-b-2 border-transparent hover:border-themeColor">
+                <a href="#">About Us</a>
+              </li>
+              <li class="border-b-2 border-transparent hover:border-themeColor">
+                <a href="#">Blog</a>
+              </li>
+              <li class="border-b-2 border-transparent hover:border-themeColor">
+                <a href="#">Career</a>
+              </li>
+              <a
+                href="/pages/contact.html"
+                class="py-2 px-4 text-white bg-blue-600 font-bold text-lg rounded-lg hover:bg-themeHoverColor transition ease-in-out duration-[0.3s]"
+              >
+                <i class="fa-solid fa-message mr-2"></i>Reach Out
+            </a>
+            </ul>
+          </div>
+          <button class="lg:hidden" id="menu-btn">
+            <i class="text-black text-xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <div id="menu-ham" class="hidden lg:hidden">
+        <ul
+          class="flex flex-col gap-5 mt-5 container w-full xl:w-[1150px] mx-auto px-5"
+        >
+          <li class="w-full border-b-2 border-gray-100">
+            <a class="inline-block w-full" href="#">Services</a>
+          </li>
+          <li class="w-full border-b-2 border-gray-100">
+            <a class="inline-block w-full" href="#">Case Studies</a>
+          </li>
+          <li class="w-full border-b-2 border-gray-100">
+            <a class="inline-block w-full" href="#">About Us</a>
+          </li>
+          <li class="w-full border-b-2 border-gray-100">
+            <a class="inline-block w-full" href="#">Blog</a>
+          </li>
+          <li class="w-full border-b-2 border-gray-100">
+            <a class="inline-block w-full" href="#">Career</a>
+          </li>
+          <a
+            href="/pages/contact.html"
+            class="py-2 lg:py-2 lg:px-4 text-white bg-blue-600 font-bold rounded-lg text-lg w-36 place-self-center hover:bg-themeHoverColor transition ease-in-out duration-[0.3s]"
+          >
+            <i class="fa-solid fa-message mr-2"></i>Reach Out
+        </a>
+        </ul>
+      </div>
+
+      <!-- Services Menu -->
+      <div class="fixed hidden shadow-lg flex w-full" id="servicesSection">
+        <div
+          class="grid grid-cols-3 gap-5 w-full pl-32 py-10 font-medium bg-white"
+        >
+          <div>
+            <a href="#"><p>Software Development</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Data Analytics</p></a>
+          </div>
+          <div>
+            <a href="#"><p>API Integration</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Mobile App Development</p></a>
+          </div>
+          <div>
+            <a href="#"><p>DevOps Services</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Staff Augmentation</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Application Modernization</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Cloud Consulting</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Software Outsourcing</p></a>
+          </div>
+          <div>
+            <a href="#"><p>CRM Development</p></a>
+          </div>
+          <div>
+            <a href="#"><p>AI Development</p></a>
+          </div>
+          <div>
+            <a href="#"><p>UX/UI Services</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Hire Dedicated Developers</p></a>
+          </div>
+          <div>
+            <a href="#"><p>ERP Software</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Enterprise Software</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Software Product</p></a>
+          </div>
+          <div>
+            <a href="#"><p>SaaS Development</p></a>
+          </div>
+          <div>
+            <a href="#"><p>Web App Development</p></a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-center gap-5 px-10 py-10 bg-gray-100 w-[800px]"
+        >
+          <p>
+            Our custom software engineering spans a wide range of software
+            development services. Gain a competitive edge with our on-demand
+            solutions and accelerate your project delivery.
+          </p>
+          <a
+            class="font-medium hover:text-themeColor transition ease-in-out duration-[0.2s]"
+            href="#"
+            ><p>Contact Us <i class="fa-solid fa-arrow-right ml-2"></i></p
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="mt-36 px-5">
+      <div
+        class="container w-full xl:w-[1150px] mx-auto flex lg:gap-10 items-center"
+      >
+        <div class="flex flex-col gap-10">
+          <h2 class="font-bold text-[40px] lg:text-[50px] leading-[60px]">
+            Innovating Your Digital Future
+          </h2>
+          <p class="leading-7 font-medium text-md lg:text-lg">
+            At Techswimmer, we specialize in crafting bespoke software solutions
+            that propel your business forward. Our team of experienced
+            developers and tech enthusiasts is dedicated to delivering
+            innovative, reliable, and scalable software tailored to meet your
+            unique needs.
+          </p>
+          <a
+            href="/pages/contact.html"
+            class="py-2 lg:py-2 lg:px-4 place-self-center lg:place-self-start text-white bg-blue-600 font-bold rounded-lg text-lg w-40 hover:bg-themeHoverColor transition ease-in-out duration-[0.3s]"
+          >
+            <i class="fa-solid fa-message mr-2"></i>Reach Out
+        </a>
+        </div>
+        <div class="lg:w-[2000px]">
+          <img class="place-self-center" src="/img/hero-img1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- First Section -->
+    <!-- <div class="my-28">
+      <div
+        class="flex gap-5 justify-between container w-full xl:w-[1150px] mx-auto partners"
+      >
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5c98e3297e3bc92bd580af14_toyota_l-1.svg"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5eddeb6e88219c06bfb152bb_lpsolution-01-1.svg"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5eccf3b5f1e74b57395c8397_daiokan-logo-1.svg"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5ecce35506c123c4936b0303_dexai-logo-1.svg"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5ecba50d2b50b63a7a1871ad_beiersdorf-logo-1.svg"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5c98e329692912146fbc4d57_mymediads_l-1.svg"
+          />
+        </a>
+        <a href="#" target="_blank">
+          <img
+            src="https://sumatosoft.com/wp-content/uploads/2022/12/5c98e3296929120ac2bc4d54_boxfwd_l-1.svg"
+          />
+        </a>
+      </div>
+    </div> -->
+
+    <!-- Second Section -->
+    <div class="bg-gray-100 py-16 mt-28 px-5">
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-20 container w-full xl:w-[1150px] mx-auto"
+      >
+        <div class="flex">
+          <p class="text-[40px] lg:text-[50px] lg:w-[350px] font-medium">
+            <span class="text-themeColor">Who</span> we are
+          </p>
+        </div>
+        <div class="leading-7 font-medium text-md lg:text-lg text-justify">
+          <p>
+            At Techswimmer, we are passionate innovators dedicated to
+            transforming the digital landscape. Our team of skilled
+            professionals brings a wealth of experience and a commitment to
+            excellence in every project we undertake. <br />
+            <br />
+            Founded with the vision of creating impactful and cutting-edge
+            software solutions, we specialize in custom software development,
+            web and mobile applications, and technology consulting.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Section -->
+    <div class="px-5">
+      <div class="container w-full xl:w-[1150px] mx-auto mt-28">
+        <div>
+          <h2 class="text-[35px] font-bold">Explore Our Offering</h2>
+          <hr class="border-[1.5px] border-themeColor w-14" />
+        </div>
+
+        <div class="relative my-10">
+          <!-- Left Side -->
+          <div
+            class="absolute hidden lg:inline-block py-5 px-8 bg-blue-900 w-[400px] shadow-xl z-10 rounded-2xl"
+          >
+            <div class="text-white font-bold w-full">
+              <div
+                class="px-6 py-5 text-white underline-custom offeringBtn shadow-lg w-[400px] bg-blue-700 rounded-lg"
+              >
+                <button
+                  onclick="handleOfferingBtnClick(event, 'software-dev')"
+                  href="#"
+                >
+                  Software Development
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'testing')"
+                  href="#"
+                >
+                  Testing & QA
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'app-services')"
+                  href="#"
+                >
+                  Application Services
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'ux-ui')"
+                  href="#"
+                >
+                  UX/UI Design
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'it-consultancy')"
+                  href="#"
+                >
+                  IT Consulting
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'data-analytics')"
+                  href="#"
+                >
+                  Data Analytics
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'help-desk')"
+                  href="#"
+                >
+                  Help Desk Services
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'infrastructure')"
+                  href="#"
+                >
+                  Infrastructure Services
+                </button>
+              </div>
+              <div class="px-6 py-5 text-white underline-custom offeringBtn">
+                <button
+                  onclick="handleOfferingBtnClick(event, 'cyber-security')"
+                  href="#"
+                >
+                  Cybersecurity Services
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div
+            class="lg:flex flex-col gap-10 px-5 overflow-hidden lg:overflow-visible w-full max-w-[1100px] "
+          >
+            <div class="lg:hidden carousel-bullets"></div>
+            <!-- Software Development -->
+            <div class="flex carousel-container">
+              <div
+                id="software-dev"
+                class="lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Software Development</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    We believe that software is more than just a tool—it’s the
+                    backbone of your business. Our software development services
+                    are designed to transform your ideas into cutting-edge
+                    applications that drive efficiency, innovation, and growth.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Bespoke Solutions:</span> Our
+                        agile methodology ensures that your project progresses
+                        smoothly, with regular updates and iterations to adapt
+                        to evolving requirements and feedback.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Agile Development:</span> We
+                        don’t believe in one-size-fits-all. Each project is
+                        approached with a fresh perspective to create solutions
+                        that are perfectly aligned with your business goals and
+                        challenges.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Cutting-Edge Technologies:</span
+                        >
+                        We leverage the latest technologies and frameworks to
+                        build scalable, secure, and high-performance software
+                        that stands the test of time.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">User-Centric Design:</span> We
+                        prioritize user experience, ensuring that your software
+                        is intuitive, engaging, and easy to navigate.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">End-to-End Support:</span> From
+                        initial design to post-launch maintenance, our dedicated
+                        team provides ongoing support to keep your software
+                        running smoothly and efficiently.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Testing & QA -->
+              <div
+                id="testing"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Testing & QA</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    We understand that quality is the cornerstone of successful
+                    software. Our comprehensive Testing & QA services are
+                    designed to ensure your product not only meets but exceeds
+                    industry standards. Discover how our tailored solutions can
+                    help you achieve flawless performance and unparalleled user
+                    satisfaction.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Functional Testing:</span>
+                        Verify that your software functions correctly and meets
+                        all specifications.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Performance Testing:</span> Test
+                        your application’s reliability and responsiveness under
+                        various conditions.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Security Testing:</span>
+                        Identify and address vulnerabilities to protect your
+                        data and ensure compliance.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Usability Testing:</span>
+                        Enhance user experience by ensuring intuitive and
+                        effective navigation.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Automation Testing:</span>
+                        Streamline testing processes with automated scripts for
+                        efficiency and consistency.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Regression Testing:</span>
+                        Confirm that new changes haven’t impacted existing
+                        functionality.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Compatibility Testing:</span>
+                        Ensure seamless performance across different devices,
+                        browsers, and systems.
+                      </p>
+                    </li>
+                    
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >User Acceptance Testing (UAT):</span
+                        >
+                        Validate your software with real users to meet their
+                        expectations.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">CI/CD Testing:</span> Integrate
+                        testing into your development workflow for continuous
+                        quality assurance.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Custom Testing Solutions:</span>
+                        Get tailored testing services for your unique needs.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Application Services -->
+              <div
+                id="app-services"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Application Services</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    We deliver comprehensive Application Services designed to
+                    drive innovation and optimize your software solutions.
+                    Explore our range of services to see how we can support your
+                    business goals.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Application Development:</span>
+                        From concept to deployment, we build custom applications
+                        tailored to your needs, ensuring scalability,
+                        performance, and user satisfaction.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Application Modernization:</span
+                        >
+                        Update and enhance your existing applications to
+                        leverage new technologies, improve performance, and stay
+                        competitive.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Mobile App Development:</span>
+                        Create engaging and functional mobile applications for
+                        iOS and Android, designed to provide a seamless user
+                        experience on any device.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Cloud Application Services:</span
+                        >
+                        Harness the power of the cloud with our services for
+                        building, migrating, and managing cloud-based
+                        applications, optimizing scalability and flexibility.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Application Integration:</span>
+                        Ensure seamless connectivity between different systems
+                        and applications, improving data flow and operational
+                        efficiency.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Maintenance and Support:</span>
+                        Keep your applications running smoothly with ongoing
+                        maintenance and support services, addressing issues
+                        promptly and ensuring optimal performance.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >API Development and Management:</span
+                        >
+                        Develop and manage APIs to enable smooth integration and
+                        interaction between your applications and third-party
+                        services.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Enterprise Application Solutions:</span
+                        >
+                        Implement robust solutions for enterprise-level needs,
+                        including ERP, CRM, and custom business applications
+                        that enhance productivity and streamline operations.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >User Experience (UX) Design:</span
+                        >
+                        Enhance the usability and aesthetic appeal of your
+                        applications with our expert UX design services,
+                        focusing on intuitive interfaces and user satisfaction.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Data Analytics and Reporting:</span
+                        >
+                        Leverage data to drive insights with our analytics and
+                        reporting solutions, helping you make informed decisions
+                        and optimize your application’s performance.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- UX/UI Design -->
+              <div
+                id="ux-ui"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">UX/UI Design</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    We create intuitive and visually appealing designs that
+                    enhance user experience and drive engagement. Discover our
+                    UX/UI design services tailored to make your application
+                    stand out.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">User Research:</span> Understand
+                        your users’ needs and behaviors through in-depth
+                        research and analysis, ensuring your design meets their
+                        expectations.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Wireframing & Prototyping:</span
+                        >
+                        Visualize and test your ideas with wireframes and
+                        interactive prototypes, refining functionality and user
+                        flow before development begins.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">UI Design:</span> Craft visually
+                        stunning and consistent user interfaces that align with
+                        your brand and make navigation effortless and enjoyable.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">UX Design:</span> Design
+                        seamless user experiences by optimizing interaction
+                        patterns and usability, ensuring your application is
+                        intuitive and user-friendly.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Usability Testing:</span>
+                        Validate your design with real users to identify and
+                        resolve usability issues, ensuring a smooth and
+                        satisfying user experience.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Responsive Design:</span> Create
+                        designs that work flawlessly across all devices and
+                        screen sizes, providing a consistent experience for
+                        users on mobile, tablet, and desktop.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Interaction Design:</span>
+                        Enhance user engagement with interactive elements and
+                        animations that make your application more dynamic and
+                        enjoyable to use.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Visual Design:</span> Develop
+                        compelling visual aesthetics that reflect your brand
+                        identity and captivate users, making your application
+                        visually appealing and memorable.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Design System Creation:</span>
+                        Establish a cohesive design system with reusable
+                        components and guidelines, ensuring consistency across
+                        your application and facilitating future updates.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Accessibility Design:</span>
+                        Ensure your application is accessible to all users,
+                        including those with disabilities, by adhering to best
+                        practices and accessibility standards.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- IT Consulting -->
+              <div
+                id="it-consultancy"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">IT Consulting</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    Our IT Consulting services are designed to guide your
+                    technology strategy, optimize operations, and drive
+                    innovation. Discover how our expertise can help you achieve
+                    your business objectives.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">IT Strategy & Planning:</span>
+                        Develop a strategic IT roadmap that aligns with your
+                        business goals, ensuring your technology investments
+                        drive growth and efficiency.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Technology Assessment:</span>
+                        Evaluate your current technology infrastructure to
+                        identify strengths, weaknesses, and opportunities for
+                        improvement, helping you make informed decisions.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Digital Transformation:</span>
+                        Guide your organization through digital change,
+                        implementing technologies and processes that enhance
+                        productivity, agility, and customer experience.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Cloud Strategy & Adoption:</span
+                        >
+                        Navigate cloud solutions with tailored strategies for
+                        migration, optimization, and management, maximizing the
+                        benefits of cloud technology.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Cybersecurity Consulting:</span>
+                        Protect your business with robust cybersecurity
+                        strategies and solutions, safeguarding your data and
+                        infrastructure against evolving threats.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >IT Governance & Compliance:</span
+                        >
+                        Ensure your IT practices adhere to regulatory
+                        requirements and industry standards, establishing
+                        effective governance and risk management frameworks.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Infrastructure Optimization:</span
+                        >
+                        Optimize your IT infrastructure for performance and
+                        efficiency, including network design, hardware, and
+                        software solutions.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Business Process Improvement:</span
+                        >
+                        Streamline and enhance your business processes through
+                        technology, increasing efficiency and reducing
+                        operational costs.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Data Management & Analytics:</span
+                        >
+                        Leverage data to drive insights and decision-making,
+                        implementing strategies for data management, analytics,
+                        and business intelligence.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Vendor Management:</span> Manage
+                        and optimize relationships with technology vendors,
+                        ensuring you get the best value and service from your
+                        technology investments.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Data Analytics -->
+              <div
+                id="data-analytics"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Data Analytics</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    Our Data Analytics services empower you to make informed
+                    decisions and drive business success. Discover how our
+                    expertise can unlock valuable insights from your data.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Data Strategy & Consulting:</span
+                        >
+                        Develop a comprehensive data strategy that aligns with
+                        your business goals, ensuring effective data management
+                        and utilization.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Data Collection & Integration:</span
+                        >
+                        Seamlessly collect and integrate data from various
+                        sources, creating a unified view that enhances analysis
+                        and reporting.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Data Visualization:</span>
+                        Transform complex data into clear, actionable
+                        visualizations with dashboards and reports that
+                        highlight key insights and trends.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Predictive Analytics:</span>
+                        Leverage advanced analytics to forecast future trends
+                        and behaviors, enabling proactive decision-making and
+                        strategic planning.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Descriptive Analytics:</span>
+                        Analyze historical data to understand past performance
+                        and identify patterns, providing a solid foundation for
+                        future strategies.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Prescriptive Analytics:</span>
+                        Gain actionable recommendations based on data analysis
+                        to optimize decision-making and improve business
+                        outcomes.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Business Intelligence (BI):</span
+                        >
+                        Implement BI tools and solutions to aggregate, analyze,
+                        and visualize data, providing comprehensive insights
+                        that drive strategic decisions.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Data Warehousing:</span> Design
+                        and manage data warehouses to store and organize large
+                        volumes of data, ensuring efficient access and analysis.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Data Quality Management:</span>
+                        Ensure the accuracy, consistency, and reliability of
+                        your data through rigorous quality management practices.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Big Data Analytics:</span>
+                        Harness the power of big data technologies to process
+                        and analyze large datasets, uncovering insights that
+                        drive innovation and competitive advantage.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Help Desk Services -->
+              <div
+                id="help-desk"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Help Desk Services</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    Our Help Desk Services are designed to provide prompt and
+                    effective support, ensuring smooth operations and enhanced
+                    user satisfaction. Discover how our services can streamline
+                    your IT support and resolve issues efficiently.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Technical Support:</span>
+                        Receive expert assistance for technical issues and
+                        troubleshooting, ensuring minimal downtime and quick
+                        resolution of IT problems.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Customer Service:</span> Enhance
+                        user experience with professional support for customer
+                        inquiries, providing timely and accurate responses to
+                        meet their needs.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Remote Support:</span> Resolve
+                        issues efficiently with remote assistance, allowing our
+                        team to diagnose and fix problems without the need for
+                        on-site visits.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Incident Management:</span>
+                        Manage and track incidents from reporting through
+                        resolution, ensuring effective handling and timely
+                        communication throughout the process.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Service Request Fulfillment:</span
+                        >
+                        Handle user requests for IT services and resources,
+                        including software installations, access permissions,
+                        and hardware provisioning.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Problem Management:</span>
+                        Identify and address the root causes of recurring
+                        issues, implementing solutions to prevent future
+                        occurrences and improve overall system reliability.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Knowledge Base Management:</span
+                        >
+                        Create and maintain a comprehensive knowledge base with
+                        self-help resources, FAQs, and troubleshooting guides to
+                        empower users and reduce support requests.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">IT Asset Management:</span>
+                        Track and manage IT assets, including hardware and
+                        software, ensuring accurate inventory and efficient
+                        utilization of resources.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Service Level Agreements (SLAs):</span
+                        >
+                        Implement and adhere to SLAs to ensure consistent and
+                        reliable support, with defined response and resolution
+                        times tailored to your needs.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >User Training & Onboarding:</span
+                        >
+                        Provide training and onboarding for new users, ensuring
+                        they are equipped with the knowledge and skills to
+                        effectively use IT systems and tools.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Infrastructure Services -->
+              <div
+                id="infrastructure"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Infrastructure Services</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    Our Infrastructure Services ensure that your IT systems are
+                    robust, scalable, and optimized for performance. Explore how
+                    we can enhance your technology infrastructure to support
+                    your business needs.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Infrastructure Design & Architecture:</span
+                        >
+                        Create a solid foundation for your IT systems with
+                        customized infrastructure designs that align with your
+                        business objectives and scalability requirements.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Network Design & Implementation:</span
+                        >
+                        Design and implement efficient network solutions to
+                        ensure reliable connectivity and high performance for
+                        your organization.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Server & Storage Solutions:</span
+                        >
+                        Optimize your server and storage environments to handle
+                        growing data needs, improve performance, and ensure data
+                        availability and security.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Cloud Infrastructure:</span>
+                        Deploy and manage cloud solutions that offer
+                        flexibility, scalability, and cost-efficiency, allowing
+                        you to scale resources according to your business needs.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Disaster Recovery & Backup:</span
+                        >
+                        Implement robust disaster recovery and backup strategies
+                        to protect your data and ensure business continuity in
+                        case of unforeseen events.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">IT Asset Management:</span>
+                        Manage and track your IT assets effectively, including
+                        hardware and software, to ensure efficient utilization
+                        and lifecycle management.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Virtualization:</span> Leverage
+                        virtualization technologies to maximize resource
+                        utilization, improve scalability, and reduce operational
+                        costs.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Security Infrastructure:</span>
+                        Implement and manage security solutions to safeguard
+                        your IT infrastructure from threats, ensuring compliance
+                        and protecting sensitive information.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Infrastructure Monitoring & Support:</span
+                        >
+                        Provide continuous monitoring and support for your IT
+                        infrastructure to identify issues proactively and ensure
+                        optimal performance.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Consulting & Optimization:</span
+                        >
+                        Receive expert advice on optimizing your IT
+                        infrastructure, improving efficiency, and aligning
+                        technology with your strategic goals.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Cybersecurity Services -->
+              <div
+                id="cyber-security"
+                class="lg:hidden h-fit lg:relative lg:start-[50px] lg:top-10 lg:shadow-lg px-10 py-16 lg:w-[1100px] h-fit rounded-2xl offeringSection carousel-slide"
+              >
+                <div class="lg:ml-[400px]">
+                  <p class="text-2xl font-bold">Cybersecurity Services</p>
+                  <hr class="border-[1.5px] border-themeColor w-14" />
+                  <p class="mt-10 font-medium">
+                    Our Cybersecurity Services protect your organization from
+                    evolving threats and vulnerabilities. Discover how we can
+                    safeguard your assets and ensure the integrity and
+                    confidentiality of your data.
+                  </p>
+                  <h3 class="text-xl mt-10 mb-5 font-bold">Why choose us?</h3>
+                  <ul class="grid grid-cols-1 list-disc ml-5 gap-5">
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Risk Assessment & Management:</span
+                        >
+                        Identify and assess potential risks to your IT
+                        environment, implementing strategies to manage and
+                        mitigate these risks effectively.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Threat Detection & Response:</span
+                        >
+                        Employ advanced tools and techniques to detect and
+                        respond to security threats in real-time, minimizing
+                        potential damage and ensuring rapid recovery.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Vulnerability Assessment:</span>
+                        Conduct thorough assessments to identify and address
+                        vulnerabilities in your systems, ensuring that your
+                        defenses are robust and up-to-date.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Firewall & Network Security:</span
+                        >
+                        Implement and manage firewalls and other network
+                        security measures to protect your infrastructure from
+                        unauthorized access and cyberattacks.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Endpoint Protection:</span>
+                        Secure endpoints such as computers, mobile devices, and
+                        servers with comprehensive protection solutions to
+                        prevent breaches and data loss.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Identity & Access Management:</span
+                        >
+                        Manage and control user access to systems and data,
+                        ensuring that only authorized individuals have access to
+                        sensitive information.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Incident Response & Forensics:</span
+                        >
+                        Provide expert response to security incidents and
+                        conduct forensic investigations to understand and
+                        mitigate the impact of breaches.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Security Awareness Training:</span
+                        >
+                        Educate your team on cybersecurity best practices and
+                        how to recognize and respond to potential threats,
+                        reducing the risk of human error.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold"
+                          >Compliance & Regulatory Services:</span
+                        >
+                        Ensure your cybersecurity practices meet industry
+                        standards and regulatory requirements, avoiding
+                        penalties and ensuring data protection.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font-medium">
+                        <span class="font-bold">Penetration Testing:</span>
+                        Simulate attacks on your systems to evaluate their
+                        security defenses and identify potential weaknesses
+                        before they can be exploited by malicious actors.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Section -->
+    <div class="bg-gray-100 py-16 mt-28 px-5">
+      <div class="flex flex-col gap-10 container w-full xl:w-[1150px] mx-auto">
+        <div class="flex flex-col lg:flex-row gap-16">
+          <div class="w-full lg:w-[600px]">
+            <h2 class="text-[30px] lg:text-[40px] font-medium">
+              For <span class="text-themeColor">5+ years</span> now we have
+              been responsible for your projects and we are proud of it!
+            </h2>
+          </div>
+          <div class="grid grid-cols-3 gap-5">
+            <div class="flex flex-col gap-1">
+              <p class="text-[40px] font-medium">70+</p>
+              <p class="text-sm font-medium">Developed Custom Solutions</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="text-[40px] font-medium">5+</p>
+              <p class="text-sm font-medium">Countries, including the USA</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="text-[40px] font-medium">5+</p>
+              <p class="text-sm font-medium">Years' Client engagement</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="text-[40px] font-medium">50%</p>
+              <p class="text-sm font-medium">Senior engineers</p>
+            </div>
+            <div class="flex flex-col gap-1">
+              <p class="text-[40px] font-medium">98%</p>
+              <p class="text-sm font-medium">Satisfaction rate</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-10 mt-10">
+          <div class="w-16">
+            <img class="w-full" src="/img/quote-mark.svg" alt="Quote" />
+          </div>
+          <p class="font-medium text-lg w-full lg:w-[700px]">
+            At TechSwimmer, we embarked on a mission to navigate the ever-changing currents of technology with agility and precision. Our goal is to deliver innovative software solutions that empower businesses to thrive in a digital world.  <br><br> I’m incredibly proud of how far we’ve come and the remarkable solutions we’ve developed. Every project is a testament to our dedication to pushing boundaries and exceeding expectations. 
+          </p>
+          <div class="flex flex-col place-self-center lg:place-self-start gap-2">
+            <div class="w-16 place-self-center lg:place-self-start">
+              <img
+                class="w-full"
+                src="/img/dheeraj.jpeg"
+                alt="Proile Picture"
+              />
+            </div>
+            <p class="text-lg font-medium">Dheeraj Kumar</p>
+            <p class="text-sm">Founder, Techswimmer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Section -->
+    <div class="mt-28 px-5">
+      <div class="container w-full xl:w-[1150px] mx-auto">
+        <div>
+          <h2 class="text-[35px] font-bold">
+            What Our Clients Appreciate About Us?
+          </h2>
+          <hr class="border-[1.5px] border-themeColor w-14" />
+          <p class="text-lg mt-8">
+            When asked about the key benefits of partnering with Techswimmer,
+            our clients highlighted several key advantages. Explore below to see
+            how we align with your needs and expectations!
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 mt-10 leading-7">
+          <div
+            class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl h-72"
+          >
+            <h2 class="text-2xl font-bold">
+              Commitment to Exceptional Service
+            </h2>
+            <p>
+              Dedicated to providing unparalleled support and solutions tailored
+              to your needs.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 shadow-lg rounded-2xl overflow-hidden h-72"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/img/temp-grid-1.webp"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl">
+            <h2 class="text-2xl font-bold">Proven Track Record of Success</h2>
+            <p>
+              A history of delivering results that exceed expectations and drive
+              business growth.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl h-72"
+          >
+            <h2 class="text-2xl font-bold">
+              Innovative Solutions for Complex Challenges
+            </h2>
+            <p>
+              Leveraging cutting-edge technology and creative problem-solving to
+              address your unique requirements.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl h-72"
+          >
+            <h2 class="text-2xl font-bold">
+              Unwavering Quality and Reliability
+            </h2>
+            <p>
+              Consistent excellence in every project, ensuring high standards
+              and dependable outcomes.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 shadow-lg rounded-2xl overflow-hidden h-72"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/img/temp-grid-2.webp"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl h-72"
+          >
+            <h2 class="text-2xl font-bold">
+              Strong Partnerships Built on Trust
+            </h2>
+            <p>
+              Fostering long-term relationships through transparency, integrity,
+              and mutual respect.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 shadow-lg rounded-2xl overflow-hidden h-72"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/img/temp-grid-3.webp"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl h-72"
+          >
+            <h2 class="text-2xl font-bold">
+              Tailored Strategies for Optimal Results
+            </h2>
+            <p>
+              Customized approaches that align with your goals and deliver
+              targeted success.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 shadow-lg rounded-2xl overflow-hidden h-72"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/img/temp-grid-4.webp"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col gap-3 py-14 px-8 shadow-lg rounded-2xl h-72"
+          >
+            <h2 class="text-2xl font-bold">
+              Exceptional Expertise and Experience
+            </h2>
+            <p>
+              A team of seasoned professionals dedicated to bringing their best
+              to every project.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 shadow-lg rounded-2xl overflow-hidden h-72"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/img/temp-grid-5.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sixth Section -->
+    <div class="mt-28 bg-gray-100 py-16 px-5">
+      <div class="container w-full xl:w-[1150px] mx-auto">
+        <div>
+          <h2 class="text-[35px] font-bold">Our Tech Stack</h2>
+          <hr class="border-[1.5px] border-themeColor w-14" />
+          <p class="text-lg mt-10">
+            Leverage our software development services to harness the power of
+            emerging technologies. From cloud-native applications to
+            cross-platform solutions, we deliver seamless, scalable experiences.
+            Discover our technological expertise and drive innovation forward.
+          </p>
+        </div>
+        <div class="flex justify-around lg:mx-60 mt-10">
+          <button
+            onclick="handleTechBtnClick(event, 'languages')"
+            class="font-bold text-sm lg:text-lg techStackBtn"
+          >
+            Languages
+          </button>
+          <button
+            onclick="handleTechBtnClick(event, 'databases')"
+            class="font-bold text-sm lg:text-lg text-gray-500 hover:text-themeTextColor transition ease-in-out duration-[0.2s] techStackBtn"
+          >
+            Databases
+          </button>
+          <button
+            onclick="handleTechBtnClick(event, 'cloud')"
+            class="font-bold text-sm lg:text-lg text-gray-500 hover:text-themeTextColor transition ease-in-out duration-[0.2s] techStackBtn"
+          >
+            Cloud & DevOps
+          </button>
+        </div>
+
+        <!-- Languages -->
+        <div
+          id="languages"
+          class="flex flex-col mt-10 items-center gap-14 techStackSection w-full"
+        >
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/net.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">.NET</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/c-sharp.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">C#</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/go.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Golang</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/js.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Javascript</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/php.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">PHP</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/python.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Python</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/rust.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Rust</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/java.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Java</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/swift.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Swift</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/angular.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Angular</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/aws.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">AWS</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/django.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Django</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/docker-1.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Docker</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/flutter.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Flutter</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/laravel.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Laravel</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/nodejs.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Node.js</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/react.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">React</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/vue.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Vue.js</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div
+          id="databases"
+          class="hidden flex flex-col mt-10 items-center gap-14 techStackSection"
+        >
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/aws.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Amazon RDS</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/azure.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Azure SQL</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/cassandra.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Cassandra</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/dynamo.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Dynamo</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/elastic.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Elasticsearch</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/mongodb.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">MongoDB</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/mysql.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">PostgreSQL</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/oracle.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Oracle</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/postgres.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">PostrgreSQL</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/sql.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">SQL Server</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div
+          id="cloud"
+          class="hidden flex flex-col mt-10 items-center gap-14 techStackSection"
+        >
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/aws.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">AWS</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/vloud.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Google Cloud</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/terraform.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Terraform</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/power-bi.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">Power BI</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/sharepoint.png"
+                alt=""
+              />
+              <p class="text-sm font-bold">SharePoint</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/kubernet.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Kubernetes</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <div class="flex flex-col gap-5 items-center px-8">
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/kafka.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Apache Kafka</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/jenkins.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Jenkins</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/azure.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Azure</p>
+            </div>
+            <div
+              class="flex flex-col gap-5 items-center lg:border-l-2 mb-5 lg:border-gray-300 px-8"
+            >
+              <img
+                src="https://cdn-ikpmlll.nitrocdn.com/LtTDqcLjqomDpPealSKvaQjCBBjvWmza/assets/images/optimized/rev-a8bf098/www.jellyfishtechnologies.com/wp-content/uploads/2024/01/docker-1.webp"
+                alt=""
+              />
+              <p class="text-sm font-bold">Docker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seventh Section -->
+    <div class="py-20 px-5 bg-themeColor">
+      <div class="container w-full xl:w-[1150px] mx-auto">
+        <div class="flex flex-col items-center gap-10">
+          <h2 class="text-[30px] lg:text-[40px] font-bold text-white">
+            Contact us and get a free project estimation!
+          </h2>
+          <button
+            class="py-2 px-4 text-themeColor bg-white font-bold rounded-lg text-lg hover:bg-gray-200 transition ease-in-out duration-[0.3s] place-self-start lg:place-self-center"
+          >
+            <i class="fa-solid fa-message mr-2"></i>Reach Out
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eighth Section -->
+    <div class="my-20 px-5">
+      <div class="container w-full xl:w-[1150px] mx-auto">
+        <div>
+          <h2 class="text-[35px] font-bold">
+            We have awesome <span class="text-themeColor">stories</span> to tell
+            you!
+          </h2>
+          <hr class="border-[1.5px] border-themeColor w-14" />
+          <p class="mt-10">
+            We share our experience and expert knowledge in the field of
+            software development and product design.
+          </p>
+          <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 mt-10">
+            <a class="group flex-1" href="">
+              <div>
+                <div class="w-full lg:w-[500px] lg:h-[300px] rounded-2xl overflow-hidden">
+                  <img
+                    class="group-hover:scale-125 w-full object-cover transition ease-in-out duration-[0.2s]"
+                    src="https://sumatosoft.com/wp-content/uploads/2022/07/pexels-andre-furtado-370717-1024x683.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2
+                  class="text-3xl mt-5 group-hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                >
+                  12 Advantages of SaaS (Software as a Service)
+                </h2>
+                <p class="text-sm text-gray-500 mt-2">July 30, 2024</p>
+              </div>
+            </a>
+            <div class="flex flex-col gap-10 flex-1">
+              <a class="group" href="#">
+                <div>
+                  <h2
+                    class="text-2xl group-hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                  >
+                    How to Build a CRM That Drives Business Growth
+                  </h2>
+                  <p class="text-gray-500 mt-2">July 30, 2024</p>
+                </div>
+              </a>
+              <a class="group" href="#">
+                <div>
+                  <h2
+                    class="text-2xl group-hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                  >
+                    How to Become a Unicorn: 7 Startup Development Stages
+                  </h2>
+                  <p class="text-gray-500 mt-2">July 18, 2024</p>
+                </div>
+              </a>
+              <a class="group" href="#">
+                <div>
+                  <h2
+                    class="text-2xl group-hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                  >
+                    Meet the Leaders: Best IoT Development Companies in 2024
+                  </h2>
+                  <p class="text-gray-500 mt-2">July 12, 2024</p>
+                </div>
+              </a>
+              <a
+                class="text-themeColor hover:text-themeHoverColor transition ease-in-out duration-[0.2s] font-bold"
+                href="#"
+              >
+                All Blogs <i class="fa-solid fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ninth Section -->
+    <div class="mt-28 bg-gray-100 py-16 px-5">
+      <div class="container w-full xl:w-[1150px] mx-auto">
+        <div>
+          <h2 class="text-[35px] font-bold">FAQ on Software Development</h2>
+          <hr class="border-[1.5px] border-themeColor w-14" />
+          <p class="text-lg mt-10">
+            We have collected questions that are repeated during conversations
+            with you, our customers, and using these questions, we have
+            explained some key terms that may raise doubts.
+          </p>
+        </div>
+
+        <div>
+          <div class="flex flex-col mt-10">
+            <div>
+              <div
+                class="hover:bg-themeColor/[.1] border-b-2 border-gray-200 cursor-pointer transition ease-in-out duration-[0.3s] faq-mainSection"
+              >
+                <div class="flex justify-between items-center py-4 px-7">
+                  <p class="font-bold text-lg">
+                    What services does your company provide?
+                  </p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="hidden ml-5 my-5 faq-subSection">
+                <p class="text-lg">
+                  We provide a wide range of services including custom software
+                  development, mobile app development, web development, IT
+                  consulting, cloud services, and maintenance and support.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="hover:bg-themeColor/[.1] border-b-2 border-gray-200 cursor-pointer transition ease-in-out duration-[0.3s] faq-mainSection"
+              >
+                <div class="flex justify-between items-center py-4 px-7">
+                  <p class="font-bold text-lg">
+                    What industries do you specialize in?
+                  </p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="hidden ml-5 my-5 faq-subSection">
+                <p class="text-lg">
+                  We have experience working across various industries including
+                  healthcare, finance, retail, education, and logistics. Our
+                  diverse expertise allows us to deliver tailored solutions to
+                  meet specific industry needs.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="hover:bg-themeColor/[.1] border-b-2 border-gray-200 cursor-pointer transition ease-in-out duration-[0.3s] faq-mainSection"
+              >
+                <div class="flex justify-between items-center py-4 px-7">
+                  <p class="font-bold text-lg">
+                    How do I get started with your services?
+                  </p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="hidden ml-5 my-5 faq-subSection">
+                <p class="text-lg">
+                  You can get started by contacting us through our website’s
+                  contact form, email, or phone. We’ll schedule an initial
+                  consultation to discuss your project requirements and
+                  determine the best way to proceed.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="hover:bg-themeColor/[.1] border-b-2 border-gray-200 cursor-pointer transition ease-in-out duration-[0.3s] faq-mainSection"
+              >
+                <div class="flex justify-between items-center py-4 px-7">
+                  <p class="font-bold text-lg">
+                    What’s your post-launch policy?
+                  </p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="hidden ml-5 my-5 faq-subSection">
+                <p class="text-lg">
+                  After 3 months, upon agreement, we’re ready to offer
+                  continuous maintenance and evolution of your software, as well
+                  as L1–L3 support (if required). We know how to nurture
+                  long-term partnerships and keep our clients happy in the long
+                  run: 62% of our revenue is coming from customers we serve for
+                  more than 2 years.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-20 px-5 bg-themeColor/[.1]">
+      <div
+        class="flex flex-col lg:flex-row gap-16 lg:gap-44 justify-between container w-full xl:w-[1150px] mx-auto"
+      >
+        <div class="flex flex-col gap-5 items-center lg:items-start">
+          <h2 class="font-bold text-xl">Quick Links</h2>
+          <ul class="flex flex-col gap-2 items-center lg:items-start">
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">About Us</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Careers</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Case Study</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="/pages/contact.html">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-5 items-center lg:items-start">
+          <h2 class="font-bold text-xl">Services</h2>
+          <ul class="flex flex-col gap-2 items-center lg:items-start">
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Software Development</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Data Analytics</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">API Integration</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Mobile App Development</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">DevOps Services</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Staff Augmentation</a>
+            </li>
+            <li
+              class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+            >
+              <a href="#">Application Modernization</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-3 items-center lg:items-start">
+          <div class="w-fit">
+            <a href="#">
+              <p class="text-3xl font-bold">
+                Tech<span class="text-themeColor">swimmer</span>
+              </p>
+            </a>
+          </div>
+          <div class="flex gap-3">
+            <a
+              class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+              href="#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+              href="#"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+              href="#"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+              href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <hr class="hidden lg:inline-block border-themeTextColor" />
+          <p class="items-center">
+            ul. Wadowicka 6 <br />
+            30-415 Kraków, Poland <br />
+            hello@crustlab.com <br />
+            +48 795 750 710
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

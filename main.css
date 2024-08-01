@@ -1,0 +1,72 @@
+@layer utilities {
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .menu li {
+    transition: ease-in-out 0.2s;
+  }
+
+  #servicesSection p:hover {
+    color: #2563eb;
+    transition: ease-in-out 0.2s;
+  }
+
+  .partners img{
+    filter: grayscale(100%);
+    opacity: 0.6;
+  }
+
+  .partners img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  .underline-custom button{
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline-custom button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+  }
+
+  .underline-custom button:hover::after {
+    width: 100%;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-bullet {
+    width: 5px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-bullet.active {
+    background-color: #333;
+  }
+  
+}

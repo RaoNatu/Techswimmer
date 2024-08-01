@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c83f347ff1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Techswimmer</title>
+  </head>
+  <body class="text-themeTextColor">
+    <div>
+      <div class="lg:shadow-lg p-2 bg-white px-5">
+        <div
+          class="container w-full xl:w-[1150px] flex justify-between items-center mx-auto"
+        >
+          <div class="w-fit">
+            <a href="/">
+              <p class="text-3xl font-bold">
+                Tech<span class="text-themeColor">swimmer</span>
+              </p>
+            </a>
+          </div>
+          <div>
+            <a href="/" class="text-gray-600">
+              <i class="fa-solid fa-arrow-left-long mr-2"></i> Back to home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 py-28">
+      <div
+        class="flex flex-col xl:flex-row xl:gap-20 justify-between items-center container w-full xl:w-[1150px] mx-auto"
+      >
+        <div class="py-20">
+          <div class="flex-1">
+            <h3 class="font-medium text-3xl">
+              Need a partner in bringing your vision in life?
+            </h3>
+            <h2 class="font-bold text-3xl">Let's Talk!</h2>
+          </div>
+          <div
+            class="shadow-lg rounded-2xl px-12 py-10 w-full lg:w-[600px] leading-7 mt-10"
+          >
+            <p>Take the first step to realize your idea.</p>
+            <p>
+              Fill in this quick form so we can get a good sense of what you
+              need. Once we review your requirements, we’ll set up a no-cost
+              consultation call with one of our experts to discuss your project
+              further.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="bg-white p-10 w-[550px] shadow-xl rounded-2xl">
+            <h2 class="text-lg font-medium text-center">Send us your query</h2>
+            <form class="flex flex-col gap-2" action="#">
+              <div class="flex flex-col gap-2">
+                <label class="text-sm text-gray-400 font-medium" for="name"
+                  >Name<span class="text-red-500">*</span></label
+                >
+                <input
+                  id="name"
+                  class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                  type="text"
+                  name="name"
+                  required=""
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-sm text-gray-400 font-medium" for="email"
+                  >Email <span class="text-red-500">*</span></label
+                >
+                <input
+                  id="email"
+                  class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                  type="text"
+                  name="email"
+                  required
+                />
+                <div class="flex flex-col gap-2">
+                  <label class="text-sm text-gray-400 font-medium" for="phone"
+                    >Phone<span class="text-red-500">*</span></label
+                  >
+                  <input
+                    id="phone"
+                    class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                    type="text"
+                    nane="phone"
+                    required=""
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-sm text-gray-400 font-medium" for="help"
+                    >How can we help?<span class="text-red-500">*</span></label
+                  >
+                  <textarea
+                    id="help"
+                    name="help"
+                    class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                    required
+                  >
+                  </textarea>
+                </div>
+                <div class="flex items-stretch mt-5">
+                  <input
+                    class="bg-themeColor w-full py-2 rounded-full text-white font-medium w-32 cursor-pointer border border-1 border-transparent hover:bg-themeHoverColor hover:text-codroid_purple hover:border-codroid_purple transition ease-in-out duration-[0.4s]"
+                    type="submit"
+                    value="Send"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-20 px-5 bg-themeColor/[.1]">
+        <div
+          class="flex flex-col lg:flex-row gap-16 lg:gap-44 justify-between container w-full xl:w-[1150px] mx-auto"
+        >
+          <div class="flex flex-col gap-5 items-center lg:items-start">
+            <h2 class="font-bold text-xl">Quick Links</h2>
+            <ul class="flex flex-col gap-2 items-center lg:items-start">
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">About Us</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Careers</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Case Study</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="/pages/contact.html">Contact Us</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-5 items-center lg:items-start">
+            <h2 class="font-bold text-xl">Services</h2>
+            <ul class="flex flex-col gap-2 items-center lg:items-start">
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Software Development</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Data Analytics</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">API Integration</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Mobile App Development</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">DevOps Services</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Staff Augmentation</a>
+              </li>
+              <li
+                class="hover:text-themeColor hover:translate-x-2 transition ease-in-out duration-[0.2s]"
+              >
+                <a href="#">Application Modernization</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3 items-center lg:items-start">
+            <div class="w-fit">
+              <a href="#">
+                <p class="text-3xl font-bold">
+                  Tech<span class="text-themeColor">swimmer</span>
+                </p>
+              </a>
+            </div>
+            <div class="flex gap-3">
+              <a
+                class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                class="text-[25px] hover:text-themeColor transition ease-in-out duration-[0.2s]"
+                href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <hr class="hidden lg:inline-block border-themeTextColor" />
+            <p class="items-center">
+              ul. Wadowicka 6 <br />
+              30-415 Kraków, Poland <br />
+              hello@crustlab.com <br />
+              +48 795 750 710
+            </p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
